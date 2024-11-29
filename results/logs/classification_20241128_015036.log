@@ -1,0 +1,5 @@
+2024-11-28 01:50:36,898 - ClassificationSystem - INFO - Starting Comprehensive Model Evaluation
+2024-11-28 01:50:36,935 - ClassificationSystem - INFO - Test Dataset Loaded: 215 samples
+2024-11-28 01:51:07,683 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2024-11-28 01:51:08,866 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2024-11-28 01:51:09,186 - ClassificationSystem - ERROR - Error during model evaluation: Expected metadata to be a non-empty dict, got 0 metadata attributes

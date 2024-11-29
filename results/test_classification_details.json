@@ -1,0 +1,802 @@
+[
+  {
+    "row_id": 0,
+    "text": "Анон\nКогла уже разрешат гостей в общаги",
+    "classification": 0,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post is a simple inquiry about when guests will be allowed in dormitories. While it pertains to university life, it lacks depth in terms of personal opinion, experience, or genuine concern. It does not provide any reflection on educational experiences or broader themes related to student life, making it more of a logistical question rather than a relevant discussion."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 1,
+    "text": "добрый вечер, общагу дают всем?? в каком она состоянии??",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post in question expresses a student's inquiry about the availability and condition of dormitories, which directly relates to university life and student experiences. The use of 'общагу' (dormitory) indicates a concern about living arrangements, a significant aspect of student life. This inquiry reflects a genuine concern about the state of accommodations, which aligns with the criteria for relevance. The post does not contain advertisements, spam, or purely social interactions, reinforcing its educational context."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 2,
+    "text": "Привет! В этом году хочу поступать сюда на логистику. Учащиеся на программах логистики, можете пожалуйста рассказать о плюсах/минусах учёбы, стоит ли поступать. Просто МИИТ мне кажется единственным вузом, в котором можно с удовольствием на логистике учиться.         Спасибо за ранее)))",
+    "classification": 1,
+    "confidence": 0.92,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's intention to apply for a logistics program and seeks feedback from current students about the pros and cons of studying logistics at the university. This indicates a genuine concern and interest in educational experiences, aligning with the relevance criteria. The request for insights from peers reflects a desire for informed opinions, which is a key aspect of student communication. Additionally, the mention of the university (МИИТ) and the specific program adds contextual depth, indicating the post is rooted in the educational environment."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 3,
+    "text": "Кто может проконсультировать по вопросу сохранения места в общежитии, если уходишь в Академ. Отпишитесь, пожалуйста в комментарии)\nАнон",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post seeks advice regarding the preservation of a dormitory spot while on academic leave, which directly relates to student life and university policies. This indicates a genuine concern about maintaining housing status during a period of absence, reflecting an educational context. The request for comments suggests an engagement with the student community for support and information, further emphasizing its relevance."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 4,
+    "text": "Здравствуйте! Учусь в 11 классе. Можно ли поступить в институт, если не сдам егэ??\nанон",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's concern about the implications of not passing the Unified State Exam (ЕГЭ) for their ability to enroll in a university. This reflects a genuine inquiry about educational pathways and potential barriers, which aligns with the classification criteria for relevance. The post indicates a personal experience related to university admission processes, making it pertinent to discussions about student life and educational experiences."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 5,
+    "text": "Всем привет, можете рассказать про очно-заочную форму обучения и как проходят вступительные после СПО?",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post in question asks for information about a specific educational format (part-time/full-time study) and the admission process after secondary vocational education (СПО). This indicates a genuine interest in understanding the educational system, which aligns with the classification guidelines for relevance. The inquiry reflects a personal concern regarding educational pathways, making it pertinent to student experiences and discussions about university life."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 6,
+    "text": "Подскажите, при поступлении в магистратуру есть возможность списать вступительные? Сложно ли учиться на направлении «Приборостроение» ? И как дела с прогулами обстоят? \nМожет кто-то может помочь с поступлением?",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post contains inquiries about the admission process for a master's program, specifically asking about the possibility of bypassing entrance exams, the difficulty of studying in the 'Instrument Engineering' field, and attendance issues. These questions reflect genuine concerns and experiences related to university life and educational pathways, aligning well with the relevance criteria for student opinions and discussions about educational experiences."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 7,
+    "text": "Всем привет!\nРасскажите какой сюрприз может сделать Черных в честь 1 июня (кто учился у нее раньше, расскажите вообще было что-то подобное ?)",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post is a request for information regarding a potential surprise from a specific teacher, which indicates a personal experience related to university life. It invites responses from peers who have had prior experiences with the teacher, thereby fostering a discussion about educational experiences and community engagement. The inquiry reflects genuine curiosity about past events in an educational context, aligning with the relevance criteria for student opinions and discussions about university life."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 8,
+    "text": "всем привет :) хочу поступить в ординатуру к вам  ! Анестезиология- реанимация \n\nГоспода ординаторы , 6курс ) помогите🫶🏼\nесть кое какие вопросы 😰 ставьте ❤️ я напишу",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's intention to apply for a residency program in anesthesiology and seeks assistance from current residents. This indicates a genuine concern about the application process and reflects the student's educational aspirations. The use of emojis and informal language suggests a social context, but the primary focus remains on educational experiences and inquiries, aligning well with the relevance criteria."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 9,
+    "text": "А сколько возможно пересдач по одной дисциплине? Типо щас вот была первая, будет ещё одна, а дальше гг? \nАнон",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post in question asks about the number of retakes allowed for a specific subject, indicating a concern related to academic policies and personal academic performance. This reflects a genuine inquiry about university life and educational experiences, aligning with the relevance criteria outlined. The use of informal language ('Типо') suggests a casual tone, but the underlying intent is educational, focusing on the implications of retake policies. This thematic resonance with student concerns about assessments enhances its relevance."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 10,
+    "text": "анонимно)\nВсем привет) планирую поступать на очно-заочное в игсу, отзовитесь кто может рассказать стоит или нет?",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's intention to enroll in a specific program and seeks feedback from peers about the program's value. This indicates a genuine concern about educational choices and reflects a personal experience related to university life. The inquiry about whether the program is worth pursuing aligns with the relevance criteria of seeking opinions and experiences related to education."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 11,
+    "text": "анон\nу кого по физре был/есть Козлов А.В, лайкните или отпишитесь в комментах, есть пару вопросов",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post is a request for information related to a specific university course (physical education) and mentions a specific instructor (Козлов А.В). This indicates a direct engagement with educational content and a desire to connect with peers for academic support. The intent is to gather insights or assistance regarding the course, which aligns with the relevance criteria of student opinions and discussions about university life. Although the post is somewhat informal, it still reflects a genuine concern for academic matters."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 12,
+    "text": "Всем привет. Собираюсь поступать на Рекламу и Связи с общественностью на платку. Кто что может сказать по поводу данного направления?",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's intention to enroll in a specific academic program (Advertising and Public Relations) and seeks feedback from peers, which aligns with the criteria for relevance. It reflects a genuine concern about educational choices and invites discussion about university life, making it pertinent to student communication analysis."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 13,
+    "text": "Много ли учебников выдают первому курсу? Они очень тяжёлые?",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post inquires about the number of textbooks provided to first-year students and expresses concern about their weight. This indicates a genuine interest in the educational experience and logistical aspects of university life, aligning with the relevance criteria of student opinions and concerns. The question reflects a personal reflection on the challenges faced by new students, which is pertinent to discussions about university life."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 14,
+    "text": "Хотелось бы учить китaйcкий. Пoдcкaжите, куда обратиться можно",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a desire to learn Chinese and seeks guidance on where to find resources or support, which indicates a genuine interest in educational pursuits. This aligns with the relevance criteria as it reflects a student's opinion and experience regarding their educational goals. The request for advice also suggests an engagement with university life and learning opportunities."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 15,
+    "text": "Всем привет) \nСобираюсь поступать на направление \"Реклама и связи с общественностью\" в РГУ им. Косыгина. Ищу людей, которые могут рассказать о минусах и плюсах обучения по этому направлению и ответить на несколько вопросов о вузе. Также интересует направление \"Социология\"\nПишите в комменты или лайкайте",
+    "classification": 1,
+    "confidence": 0.92,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a clear intention to gather opinions and experiences about a specific academic program ('Реклама и связи с общественностью') at a university, which aligns with the relevance criteria of student opinions and discussions about university life. The user is seeking feedback on the pros and cons of the program, indicating a genuine concern for educational choices. Additionally, the mention of another field of interest ('Социология') further emphasizes the educational context. Overall, the post is focused on obtaining relevant information related to academic experiences, making it highly relevant."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 16,
+    "text": "Поздравляем наших преподавателей с выходом учебника!🥰",
+    "classification": 0,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post congratulates teachers on the release of a textbook, which, while related to educational content, does not express a student opinion, experience, or concern. It lacks a personal reflection or discussion about university life from the student's perspective. The intent seems more celebratory rather than analytical or reflective, which diminishes its relevance to the classification criteria."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 17,
+    "text": "Хочу перевестись в Люберецкий РТА на юриспруденцию с другого вуза(на 2 курс). Поделитесь пожалуйста опытом обучения на юриспруденции 1 курса и старше. Стоит ли ? \nСложно ли перевестись и как это сделать? \nАнон",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's desire to transfer to a specific university program (law) and seeks feedback from others about their experiences. This indicates a genuine concern about the educational process and reflects personal reflections on their academic journey. The inquiry about the difficulty of transferring and the process involved further emphasizes the relevance to university life and student experiences."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 18,
+    "text": "Всем добрый день,\nЯ планирую подавать доки в НГТУ,\nХотела бы у действующих студентов данного вуза узнать о плюсах и минусах обучения? А так же условия проживания в общаге универа, как с живностью там и тд? Анонимно",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post is classified as relevant because it explicitly seeks opinions and experiences from current students about the pros and cons of studying at NGTU, which aligns with the criteria for student opinions and discussions about university life. Additionally, the inquiry about living conditions in the university dormitory indicates a genuine concern regarding the educational experience. The request for anonymous feedback further emphasizes the intent to gather personal reflections and insights from peers."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 19,
+    "text": "Всем привет! Может кто то взаимодействовал с доктором Файзулиным Евгением Ревовичем? Можете написать отзыв? \nИ какие способы безоперациооного лечения грыж позвоночника есть у нас в Иркутске? Поделитесь пожалуйста контактами)",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post seeks feedback on a specific doctor and inquires about non-surgical treatment options for spinal hernias, which indicates a genuine concern related to health and well-being. This reflects a personal experience and an educational inquiry relevant to student life, particularly for those studying health sciences or dealing with health issues. The request for reviews and contacts suggests a desire for shared experiences and knowledge, aligning with the criteria for relevance."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 20,
+    "text": "Кто брал целевое на Агроинженерию?",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post asks about experiences related to a specific educational program (Agroengineering), indicating a genuine inquiry about targeted educational opportunities. This aligns with the relevance criteria of student opinions and discussions about university life. The question implies a search for personal experiences or feedback from peers, which is pertinent to the educational context."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 21,
+    "text": "Добрый день. Хотелось бы узнать про специальность маркшейдерское дело, хватит ли 203 балла + медаль чтобы к вам поступить, насколько сложно вообще учиться, на какие предметы идет упор, и про общагу (насколько вообще там реально жить, сколько человек в комнате, тараканы и т.д). Заранее спасибо)",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post contains specific inquiries about the educational program 'маркшейдерское дело' (mining engineering), including questions about admission scores, study difficulty, subject focus, and living conditions in the dormitory. These elements indicate a genuine interest in the educational experience and university life, aligning with the relevance criteria for student opinions and concerns."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 22,
+    "text": "Хочу поступать в магистратуру Экологии и природопользовании. Если тут есть кто учится там, буду рада узнать отзыв о руководителях и расписании. В частности как много пар ставят и в какое время?)",
+    "classification": 1,
+    "confidence": 0.95,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's intention to enroll in a master's program in Ecology and Natural Resource Management, which directly relates to educational experiences and university life. The request for feedback on instructors and scheduling indicates a genuine concern about the academic environment, aligning with the relevance criteria for student opinions and experiences. The inquiry about the number of classes and their timing further emphasizes the student's engagement with their educational journey."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 23,
+    "text": "Здравствуйте! Расскажите пожалуйста про специальность строительство: Как проходят вступительные экзамены (если собираюсь идти на заочное обучение) \nСтоит  вообще поступать, тяжело учиться или нет?",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post contains a request for information about a specific academic program (construction) and inquiries about the admission process and the difficulty of studying in that field. This indicates a genuine concern and interest in educational experiences, aligning with the relevance criteria for student opinions and discussions about university life. The questions posed reflect personal reflections on the educational journey, making it a relevant post."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 24,
+    "text": "Ребят, кто в АБИБе учится на биофаке? Расскажите как там нагрузка, преподы, интересно ли, какие перспективы, думаю о переводе. В вашем вузе вообще как к пропускам относятся. Есть ли отработки? Ну и какой шанс перевестись на бюджет, если я в другом вузе сейчас на бюджете? \nАнон",
+    "classification": 1,
+    "confidence": 0.95,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post is highly relevant as it contains a student's inquiry about their educational experiences and opinions regarding a specific academic program (biological sciences) at their university. The user is seeking feedback on workload, teaching quality, and future prospects, which are all pertinent to university life. Additionally, the questions about attendance policies and the possibility of transferring to a budget position indicate genuine concerns about their educational journey. This aligns well with the classification guidelines for relevant posts."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 25,
+    "text": "Всем привет \nПодскажите пожалуйста как проходят вступительные испытания в магистратуру? Ну что да как, в каком формате. Хочу на направление биологии (пед)\nАнон пожалуйста",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post in question seeks information about the entrance exams for a master's program in biology, indicating a genuine concern and interest in the educational process. It reflects the student's personal experience and desire for guidance, which aligns with the criteria for relevance. The request for details about the format of the exams suggests an engagement with university life and academic planning."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 26,
+    "text": "Есть ли шанс перевестись на бюджет, если не отличник и с чего начать? \nАнон",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post in question expresses a student's inquiry about the possibility of transferring to a budget-funded program, indicating a concern about their academic standing and financial implications. This reflects a genuine concern regarding university policies and personal educational experiences, which aligns with the relevance criteria for student opinions and discussions about university life. The question also implies a desire for guidance on navigating academic processes, further emphasizing its educational relevance."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 27,
+    "text": "Всем здравствуйте. \nКто поступал после медицинского колледжа, расскажите о вступительных экзаменах пожалуйста, их можно сдавать в один день сразу все экзамены, или по отдельности приходить? Так же есть вопрос, если ли примерные тесты по ним чтоб лучше подготовиться? напишите в лс",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post contains a request for information about entrance exams after medical college, which directly relates to student experiences and concerns regarding educational processes. The user is seeking advice and sharing their situation, indicating a genuine interest in understanding the academic requirements they face. This aligns with the criteria for relevance, as it reflects personal reflections on educational experiences and discussions about university life."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 28,
+    "text": "Анонимно\n\nДобрый день, поступаю в РГПУ на магистратуру по направлению лингвистики, есть много вопросов. Если не трудно будет на них ответить, отпишитесь в комменты, напишу в лс \n\nСпасибо",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's intent to enroll in a master's program in linguistics and seeks assistance with questions related to this educational pursuit. This indicates a genuine concern about the academic process and reflects personal experiences related to university life. The request for responses in the comments or direct messages further emphasizes the educational context and the need for community engagement, aligning well with the classification criteria for relevance."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 29,
+    "text": "Добрый день. Посоветуйте пожалуйста человека, кто может помочь подготовиться к вступительным экзаменам в магистратуру? Спасибо \nАнон",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post requests assistance in preparing for entrance exams for a master's program, which indicates a direct relevance to educational experiences and concerns. The user is seeking advice, reflecting a genuine need for support in their academic journey. This aligns with the classification guidelines that prioritize student opinions and discussions about university life."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 30,
+    "text": "Приветик. Интересует электив «Психологическое сопровождение спортивной деятельности», он правда ведется дистанционно? Или может так произойти, что он будет очно на чече?💀",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's inquiry about a specific elective course, which indicates a direct engagement with their educational experience. The mention of the course title 'Психологическое сопровождение спортивной деятельности' (Psychological Support in Sports Activities) demonstrates a focus on academic content. Additionally, the student is seeking clarification on the mode of delivery (distance vs. in-person), which reflects genuine concern about their educational options. This aligns with the relevance criteria of discussing university life and expressing personal reflections on educational experiences."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 31,
+    "text": "Для абитуриентов у нас есть два чата:\n1-й чат администрируется КубГУ, но с разбивкой по факультетом: https://vk.me/join/O5UlRNoxUL_Wz_ghQOYYwi6xHwLl0iQF/bU=\n2-й чат администрируется факультетом. https://vk.me/join/AZQ1d4YzOAXrAyE6sgWO/sMr\nАбитуриенты - заходите (можете в оба, можете только в верхний - как хотите), задавайте вопросы. Старшие товарищи чем-то помогут и что-то подскажут. Всем добра!",
+    "classification": 0,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post primarily serves as an informational announcement about chat groups for prospective students, providing links and encouraging them to ask questions. While it mentions that senior students can help, it lacks personal opinions, experiences, or reflections that would indicate a deeper engagement with university life. The focus is on facilitating communication rather than sharing educational experiences or concerns."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 32,
+    "text": "Есть ли группа эконома, бакалавр 3 курс?\nАнон.",
+    "classification": 0,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post asks about the existence of a specific group related to economics for third-year bachelor's students. While it does pertain to student life, it lacks depth in terms of personal opinions, experiences, or genuine concerns. It reads more like a request for information rather than a reflection or discussion about university life. Therefore, it does not meet the criteria for relevance as it is more of an informational inquiry."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 33,
+    "text": "Ребят, привет, кто-нибудь проходил стажировку или работает в ОМК( объединенная металлургическая компания)?\nМожете написать мнение о ней \nПредлагают поступить на целевое в магистратуру, но вот смущает отзывы об этой компании\nЕсли есть кто поступил на целевое вообще отлично\nЗаранее спасибо",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's inquiry about an internship opportunity at a specific company, which directly relates to their educational and career experiences. The request for opinions and feedback indicates a genuine concern regarding the company's reputation and its implications for their academic path, particularly regarding a targeted master's program. This aligns with the classification criteria of containing student opinions and discussions about university life."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 34,
+    "text": "Анон\nЗдравствуйте, что можете сказать о кафедре Э8 16.03.02 Высокотехнологичные плазменные и энергетические установки? Стоит туда поступать? Вроде направление интересное и с работой неплохо. Также если есть те, кто работает в Курчатнике, что можете сказать? Как с зп и условиями работы?",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post is classified as relevant because it contains a student's inquiry about a specific academic department and program, reflecting their interest in pursuing education in that field. The user seeks opinions and experiences from others, which aligns with the criteria of student opinions and discussions about university life. Additionally, the mention of job prospects and working conditions indicates a genuine concern about future career opportunities, further enhancing its relevance."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 35,
+    "text": "я планирую поступать в этом году, сдаю инфу и географию, как думаете на какой факультет лучше пойти?)",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's intention to apply for university and seeks advice on which faculty to choose based on their subjects (information technology and geography). This indicates a genuine concern about educational choices and reflects personal experiences related to university life. The inquiry about faculty selection demonstrates engagement with the educational process, making it relevant to student communication."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 36,
+    "text": "Кто-нибудь понимает, как взять такие интегралы?",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post asks for assistance with understanding how to solve integrals, which indicates a direct engagement with educational content. This reflects a student's genuine concern about their academic work and seeks help from peers, aligning with the classification guidelines for relevant posts. The inquiry suggests a personal experience related to their studies, making it pertinent to university life and educational discussions."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 37,
+    "text": "Привет, вопрос к людям с мехмата и знающим. Сложно ли получить москвичу на мехмате общагу во втором/третьем семестре? Если нет, то когда самое раннее это можно сделать? Есть ли у этого какие-то подводные вроде хорошо сданной сессии? Просто хочется как можно скорее попасть в общагу после поступления. Заранее спасибо.",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post is relevant as it expresses a student's genuine concern about obtaining accommodation at the university, specifically inquiring about the process and requirements. This reflects the student's experience and feedback regarding university life, particularly related to housing, which is a significant aspect of the educational experience. The inquiry about the timing and conditions for securing accommodation indicates a personal reflection on their educational journey and living situation."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 38,
+    "text": "Влюбилась в преподавателя, не знаю что мне делать, подскажите, пожалуйста что-то.",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a personal emotional experience related to a teacher-student dynamic, which is a relevant aspect of university life. The student is seeking advice on a situation that involves feelings for a faculty member, indicating a genuine concern and reflection on their educational environment. This aligns with the criteria for relevance as it involves personal experiences and reflections that are pertinent to the student's educational journey."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 39,
+    "text": "Это база😁",
+    "classification": 0,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The phrase 'Это база😁' translates to 'This is the base' in English, which lacks sufficient context to determine its relevance to student experiences or educational discussions. The use of an emoji suggests a casual tone, but without additional context, it does not convey any opinions, experiences, or reflections related to university life. It appears to be a standalone statement that does not engage with educational themes or concerns."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 40,
+    "text": "Подскажите,кто может сделать контрольную работу по фотограмметрии и дистанционному зондированию на тему «Изучение геометрических свойств аэрофотоснимка»?\nАнон.",
+    "classification": 0,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post is primarily a request for assistance with a specific academic task (control work on photogrammetry and remote sensing), which could suggest educational relevance. However, it lacks personal opinions, experiences, or reflections that would typically characterize a relevant post. Instead, it reads more like a solicitation for help rather than a discussion or reflection on university life or educational experiences. Therefore, while it has some educational context, it does not meet the criteria for relevance as it does not provide insights or discussions about the student's own experiences or concerns."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 41,
+    "text": "добрый день! Я аспирант МГУ очной формы обучения, проживаю в ГЗ , я женат. Вопрос такой: может ли моя жена жить со мной в общежитии (отношения к МГУ она никакого не имеет)?",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's inquiry regarding the possibility of their spouse living with them in university accommodation. This reflects a genuine concern related to university life and housing policies, which is relevant to the student's educational experience. The mention of being a graduate student at a specific university (MGU) adds context that ties the question directly to the educational environment. Although the spouse does not have a direct relationship with the university, the inquiry is still rooted in the student's experience and circumstances within the university setting."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 42,
+    "text": "Отчислят ли с платки за многократные (март апрель май за этот год) пропуски без уважительной? Меньше 20, но испектор злится",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's concern regarding potential academic consequences due to attendance issues, specifically referencing the possibility of being expelled for multiple unexcused absences. This indicates a genuine concern about university policies and personal academic standing, aligning with the classification guidelines for relevance. The mention of the inspector's reaction adds a layer of context that reflects the student's experience within the educational environment."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 43,
+    "text": "Ребята со старших курсов Психологии и кто учится дистанционно, можете поделиться опытом, как вам здесь? Лайкните запись, я вам напишу)",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post explicitly seeks input from senior psychology students and those studying remotely about their experiences, which aligns with the criteria for relevance. It reflects a genuine request for feedback and personal experiences related to university life, indicating a concern for understanding the educational environment. The intent is to foster discussion about the educational experience, which is a key indicator of relevance."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 44,
+    "text": "Ребята, кто сдавал 2 экземпляра договора на практику, можете подходить за одним экземпляром, все документы подписаны. Забирать договоры можно в приемные дни с 11:00 до 13:00 и с 16:00 до 17:00",
+    "classification": 0,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post primarily serves as an informational announcement regarding the collection of signed contracts for a practical placement. It lacks personal opinions, experiences, or reflections that would indicate a deeper engagement with university life or educational experiences. While it is relevant to students in the context of practical training, it does not fulfill the criteria for a relevant post as it does not express any personal sentiment or concern."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 45,
+    "text": "Добрый день! Поставьте, пожалуйста, «+» в комментариях те, кто проходил МФК онлайн. Есть несколько вопросов. \n\nАнон",
+    "classification": 0,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post is primarily a request for engagement ('Поставьте, пожалуйста, «+» в комментариях') regarding a specific experience (MФК online), but it lacks depth in terms of personal opinion, experience, or educational reflection. It does not provide insights into university life or genuine concerns, as it is more of a solicitation for responses rather than a discussion or reflection. The mention of having 'несколько вопросов' suggests a potential for educational relevance, but without elaboration, it remains too vague and lacks the necessary context to be classified as relevant."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 46,
+    "text": "Доброго времени суток\nХотелось бы узнать как принимает Историю России до 19 века М.В Калинин, заранее спасибо.\n\nАнон",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post expresses a student's inquiry about a specific course, which indicates a genuine interest in educational experiences. The mention of a professor and a specific subject (History of Russia until the 19th century) aligns with the relevance criteria of discussing university life and seeking feedback or information related to academic experiences. Although the post is brief, it reflects a personal engagement with the educational context, making it relevant to student communication analysis."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 47,
+    "text": "совбак, но скидка, или бюджет на экономике? \nанон",
+    "classification": 0,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The input text appears to discuss a discount or budget related to economics, but it lacks explicit educational context or personal reflection on student experiences. It seems more like a casual inquiry or statement that does not delve into university life or student opinions. The mention of 'анон' (anon) suggests a level of anonymity that further distances the post from a personal educational experience. Overall, it does not meet the criteria for relevance as it does not provide insights into student life or educational themes."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 48,
+    "text": "стоит поступать? анон",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The input text 'стоит поступать? анон' translates to 'Is it worth applying? announcement'. This indicates a student inquiry about the value of applying to a university or program, which aligns with the relevance criteria of seeking opinions or experiences related to educational decisions. The phrase suggests a personal reflection on the application process, indicating a genuine concern or observation about university life. Although the term 'анон' (announcement) could imply a request for information, the primary focus remains on the student's contemplation of the application process, which is educationally relevant."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  },
+  {
+    "row_id": 49,
+    "text": "Всем привет! Есть ли кто-нибудь, кто переводился с бюджета одной ОП на бюджет другой ОП внутри ВШЭ? Напишите, пожалуйста, + или лайкнете пост, хочется задать пару вопросов 🙏🏻",
+    "classification": 1,
+    "confidence": 0.85,
+    "intermediate_steps": [
+      "Retrieved Examples: []",
+      "Label Distribution: {0: 0.5, 1: 0.5}",
+      "LLM Reasoning: The post is a request for information regarding the process of transferring from one budget program to another within the same university. This indicates a genuine concern and interest in navigating university life and academic processes, which aligns with the relevance criteria for student opinions and experiences. The use of 'пара вопросов' (a couple of questions) suggests a desire for engagement and shared experiences among peers, further emphasizing its educational context."
+    ],
+    "retrieved_examples": [],
+    "label_distribution": {
+      "0": 0.5,
+      "1": 0.5
+    }
+  }
+]

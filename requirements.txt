@@ -1,0 +1,8 @@
+langchain
+langgraph
+openai
+pandas
+scikit-learn
+langchain-openai
+tiktoken
+pyyaml

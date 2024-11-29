@@ -1,0 +1,56 @@
+system:
+  # Disable semantic search
+  use_semantic_search: false
+  
+  # Logging settings
+  log_level: 'INFO'
+  log_directory: 'logs'
+  
+  # Embedding model settings
+  embedding_model: 'text-embedding-3-large'
+  embedding_dimensions: 1536
+  
+  # LLM settings
+  llm_model: 'gpt-4o-mini'
+  llm_base_url: 'https://api.openai.com/v1'
+  llm_temperature: 0.2
+  llm_max_tokens: 512
+  
+  # Retrieval settings
+  max_similar_examples: 5
+  similarity_threshold: 0.6
+
+datasets:
+  # Paths to original datasets
+  relevant_paths: []
+  irrelevant_paths: []
+  
+  # Path for unified validation dataset
+  validation_dataset: 'validation_dataset.csv'
+  input_dataset: '/home/dukhanin/soc_hack/docs/Хакатон_2024/dataset_select_hackathon_26_11.csv'
+
+classification:
+  # Confidence threshold for classification
+  confidence_threshold: 0.5
+  
+  # Fallback label if confidence is low
+  default_label: 0
+  
+  # Machine learning classifier settings
+  classifier:
+    type: 'logistic_regression'
+    random_state: 42
+    max_iter: 1000
+
+performance_monitoring:
+  # Performance tracking settings
+  track_metrics: true
+  metrics_to_track:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - confusion_matrix
+
+llm:
+  provider: 'openai'

@@ -1,0 +1,73 @@
+2024-11-28 01:53:22,846 - ClassificationSystem - INFO - Starting Comprehensive Model Evaluation
+2024-11-28 01:53:22,854 - ClassificationSystem - INFO - Test Dataset Loaded: 215 samples
+2024-11-28 01:53:24,902 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2024-11-28 01:53:26,804 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2024-11-28 01:53:29,610 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2024-11-28 01:53:30,916 - ClassificationSystem - WARNING - Classification failed for text: Анон
+Сколько раз нужно ходить к Довжик Т.В., чтобы... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,920 - ClassificationSystem - WARNING - Classification failed for text: Анонимно 🙆🏼‍♀️
+Добрый день
+Скажите, пожалуйста, ка... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,924 - ClassificationSystem - WARNING - Classification failed for text: Ребят всем привет) 
+Вопрос такой, если среди вас п... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,928 - ClassificationSystem - WARNING - Classification failed for text: Анонимно
+Есть кто нибудь из 152 группы? Откликните... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,932 - ClassificationSystem - WARNING - Classification failed for text: Спасибо, профсоюз, за заботу и предоставленную воз... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,936 - ClassificationSystem - WARNING - Classification failed for text: Кто-нибудь понимает, как взять такие интегралы?... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,940 - ClassificationSystem - WARNING - Classification failed for text: Кто поступал в ординатуру по патологической анатом... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,944 - ClassificationSystem - WARNING - Classification failed for text: Решение учиться в Западном филиале Президентской а... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,948 - ClassificationSystem - WARNING - Classification failed for text: Кто сдавал экзамен по философии у Карандаевой Т.С.... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,955 - ClassificationSystem - WARNING - Classification failed for text: Всем добрый день!
+Планирую поступать в магистратур... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,962 - ClassificationSystem - WARNING - Classification failed for text: Добрый день!)
+Хочу спросить на счёт направления "Р... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,969 - ClassificationSystem - WARNING - Classification failed for text: Мурзагалина Гульназ Миннуловна - лучший декан наше... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,974 - ClassificationSystem - WARNING - Classification failed for text: У кого-нибудь есть ответы на вопросы к экзамену по... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,982 - ClassificationSystem - WARNING - Classification failed for text: Ребята из первого корпуса, я понимаю ваше желание ... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,989 - ClassificationSystem - WARNING - Classification failed for text: Всё жду, когда стипендию поднимут до уровня МРОТа,... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,994 - ClassificationSystem - WARNING - Classification failed for text: Здравствуйте! Есть ли в группе ординаторы стоматол... Error: Collection classification_examples already exists
+2024-11-28 01:53:30,999 - ClassificationSystem - WARNING - Classification failed for text: Всем привет. Я по гороскопу - Рыбы, а по асцендент... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,003 - ClassificationSystem - WARNING - Classification failed for text: Галина Вячеславовна,педагог от Бога и шикарная Жен... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,007 - ClassificationSystem - WARNING - Classification failed for text: В Академ с одной задолженностью отпустят?
+Анон... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,011 - ClassificationSystem - WARNING - Classification failed for text: За месяц студенчества произошло уже достаточно мно... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,016 - ClassificationSystem - WARNING - Classification failed for text: Приветик,анон
+Какая общага лучше 1 или 2?... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,020 - ClassificationSystem - WARNING - Classification failed for text: Здравствуйте, кто сейчас учится на Психолога(уже п... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,024 - ClassificationSystem - WARNING - Classification failed for text: Здравствуйте! Учусь в 11 классе. Можно ли поступит... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,027 - ClassificationSystem - WARNING - Classification failed for text: Прыжки с парашютом - это уникальный опыт, который ... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,030 - ClassificationSystem - WARNING - Classification failed for text: Добрый день. Посоветуйте пожалуйста человека, кто ... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,033 - ClassificationSystem - WARNING - Classification failed for text: Перед парами в Изме... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,036 - ClassificationSystem - WARNING - Classification failed for text: Существуют ли у Плешанова автоматы и как их получи... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,039 - ClassificationSystem - WARNING - Classification failed for text: У нас самый страшный 2ой сем был🙈, оч много предме... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,042 - ClassificationSystem - WARNING - Classification failed for text: У Рыжих по началу правда было не легко сдавать лаб... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,045 - ClassificationSystem - WARNING - Classification failed for text: Если завалил 1 зачет, а остальные предметы сдал на... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,048 - ClassificationSystem - WARNING - Classification failed for text: Ребят, привет, кто-нибудь проходил стажировку или ... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,052 - ClassificationSystem - WARNING - Classification failed for text: Теория государства и права - базовый и интереснейш... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,055 - ClassificationSystem - WARNING - Classification failed for text: Привет, вопрос к людям с мехмата и знающим. Сложно... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,059 - ClassificationSystem - WARNING - Classification failed for text: Можно ли не приезжая в уник сделать справку о дохо... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,062 - ClassificationSystem - WARNING - Classification failed for text: Всем привет! Есть ли кто-нибудь, кто переводился с... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,064 - ClassificationSystem - WARNING - Classification failed for text: Добрый день всем . Кто может подсказать ,при оплат... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,068 - ClassificationSystem - WARNING - Classification failed for text: Анон
+Когла уже разрешат гостей в общаги... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,071 - ClassificationSystem - WARNING - Classification failed for text: Всем привет! Планирую перепоступать в МГЛУ из друг... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,073 - ClassificationSystem - WARNING - Classification failed for text: Ребята со старших курсов Психологии и кто учится д... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,075 - ClassificationSystem - WARNING - Classification failed for text: Здравствуйте! Расскажите пожалуйста про специально... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,077 - ClassificationSystem - WARNING - Classification failed for text: Добрый день. Хотелось бы узнать про специальность ... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,079 - ClassificationSystem - WARNING - Classification failed for text: Народ, сориентируйте, пожалуйста, как можно помочь... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,081 - ClassificationSystem - WARNING - Classification failed for text: Отчислят ли с платки за многократные (март апрель ... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,084 - ClassificationSystem - WARNING - Classification failed for text: Всем добрый день,
+Я планирую подавать доки в НГТУ,... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,086 - ClassificationSystem - WARNING - Classification failed for text: А сколько возможно пересдач по одной дисциплине? Т... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,088 - ClassificationSystem - WARNING - Classification failed for text: Кто брал целевое на Агроинженерию?... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,091 - ClassificationSystem - WARNING - Classification failed for text: вероника стэн давай дружить... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,094 - ClassificationSystem - WARNING - Classification failed for text: Анон
+ Ребята, всем привет! 
+Есть вопрос насчет орд... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,097 - ClassificationSystem - WARNING - Classification failed for text: анон
+у кого по физре был/есть Козлов А.В, лайкните... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,099 - ClassificationSystem - WARNING - Classification failed for text: Коллекция ароматов политехника
+
+Какой выберете вы?... Error: Collection classification_examples already exists
+2024-11-28 01:53:31,100 - ClassificationSystem - ERROR - No predictions generated
+2024-11-28 01:53:31,101 - ClassificationSystem - INFO - Model Evaluation Completed Successfully
