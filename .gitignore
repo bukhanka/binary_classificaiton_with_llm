@@ -3,3 +3,8 @@ chroma_storage/
 docs/
 embedding_cache/
 .env
+# Add to .gitignore
+.env
+*.env
+**/secrets*
+**/credentials*
