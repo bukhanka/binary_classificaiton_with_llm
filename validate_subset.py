@@ -6,8 +6,9 @@ import numpy as np
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from sklearn.metrics import f1_score, classification_report
 from src.agents.classification_agent import ClassificationAgent, AgentState
+from dotenv import load_dotenv
 
-os.environ['OPENAI_API_KEY'] = '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'
+load_dotenv()
 
 def load_config(config_path='config.yaml'):
     """
