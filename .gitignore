@@ -2,3 +2,4 @@
 chroma_storage/
 docs/
 embedding_cache/
+.env
