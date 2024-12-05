@@ -1,0 +1,38 @@
+
+Classification Run Report
+========================
+Date: 2024-12-05 18:37:00
+
+Processing Statistics:
+---------------------
+Total Texts Processed: 1408
+Total Processing Time: 148.99 seconds
+Average Processing Time per Text: 0.1058 seconds
+
+Category Distribution:
+--------------------
+predicted_category
+0    765
+1    429
+3    134
+2     80
+Name: count, dtype: int64
+
+Confidence Metrics:
+-----------------
+Mean Confidence: 0.8518
+Median Confidence: 0.8500
+Minimum Confidence: 0.5000
+Maximum Confidence: 0.9500
+
+Category Mapping:
+---------------
+0: Учебная и внеучебная вовлеченность
+1: Социально-бытовые условия
+2: Финансовые условия
+3: Лояльность к ВУЗу
+
+Notes:
+------
+- Predictions saved to hackathon_predictions.csv
+- Detailed logs available in hackathon_prediction.log

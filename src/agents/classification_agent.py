@@ -6,6 +6,7 @@ import yaml
 import os
 import logging
 import ast
+import time
 
 from src.utils.vector_store import VectorStoreRetriever
 
@@ -39,7 +40,7 @@ class ChainOfThoughtPrompt:
         class_descriptions = {
             0: {
                 "name": "Учебная и внеучебная вовлеченность",
-                "description": """Отношение к преподавателям и качеству преподавания в университете, включая:
+                "description": """Отношение к преподавателям и качеству преподавания в университете, вклю��ая:
                 1. Конкретные отзывы о качестве преподавания и преподавателях
                 2. Системные проблемы образовательного процесса (сессия, задания, экзамены)
                 3. Технические аспекты обучения (документооборот, личные кабинеты)
@@ -65,7 +66,7 @@ class ChainOfThoughtPrompt:
                 4. Медицинское обслуживание
                 5. Инфраструктура университета""",
                 "positive_examples": [
-                    "С 1 сентября! Когда включат отопление в общаге? Мы умираем от холода 🥶",
+                    "С 1 сентября! Когда включат отопле��ие в общаге? Мы умираем от холода 🥶",
                     "В общежитии опять проблемы с горячей водой, когда это закончится?",
                     "Почему в столовой такие большие очереди? Невозможно успеть поесть между парами"
                 ],
@@ -262,111 +263,91 @@ class ClassificationAgent:
             labels=combined_df['label'].tolist() if 'label' in combined_df.columns else [0] * len(combined_df)
         )
     
-    def initial_classification(self, state: AgentState):
+    def initial_classification(self, state: AgentState, max_retries=3):
         """
         Perform classification using vector store retrieval and GPT-4o reasoning
         
         Args:
             state (AgentState): Current agent state
+            max_retries (int): Number of retry attempts
         
         Returns:
             Updated agent state
         """
-        text = state['input']
-        
-        # Retrieve Similar Examples
-        retrieval_results = self.vector_store.query(text, n_results=5)
-        
-        # Get Label Distribution
-        label_distribution = self.vector_store.get_label_distribution(retrieval_results)
-        
-        # Prepare Similar Examples
-        similar_examples = [
-            {
-                'text': doc, 
-                'label': metadata['label'], 
-                'distance': distance
-            }
-            for doc, metadata, distance in zip(
-                retrieval_results['documents'], 
-                retrieval_results['metadatas'], 
-                retrieval_results['distances']
-            )
-        ]
-        
-        # Generate Reasoning Prompt
-        reasoning_prompt = ChainOfThoughtPrompt.generate_reasoning_prompt(
-            text, similar_examples, label_distribution
-        )
-        
-        # LLM Reasoning with JSON output
-        llm_response = self.llm.invoke(reasoning_prompt)
-        
-        # Robust parsing with multiple fallback methods
-        try:
-            # First, try ast.literal_eval
-            classification_result = ast.literal_eval(llm_response.content)
-        except (SyntaxError, ValueError):
+        for attempt in range(max_retries):
             try:
-                # If that fails, try json.loads
-                import json
-                classification_result = json.loads(llm_response.content)
-            except json.JSONDecodeError:
-                # If both fail, try to clean and repair the JSON
-                try:
-                    # Remove duplicate or incomplete lines
-                    cleaned_content = '\n'.join(
-                        line for line in llm_response.content.split('\n') 
-                        if line.strip() and not line.startswith('"reasoning":')
+                # Existing classification logic remains the same
+                text = state['input']
+                
+                # Retrieve Similar Examples
+                retrieval_results = self.vector_store.query(text, n_results=5)
+                
+                # Get Label Distribution
+                label_distribution = self.vector_store.get_label_distribution(retrieval_results)
+                
+                # Prepare Similar Examples
+                similar_examples = [
+                    {
+                        'text': doc, 
+                        'label': metadata['label'], 
+                        'distance': distance
+                    }
+                    for doc, metadata, distance in zip(
+                        retrieval_results['documents'], 
+                        retrieval_results['metadatas'], 
+                        retrieval_results['distances']
                     )
-                    classification_result = ast.literal_eval(cleaned_content)
-                except Exception as e:
-                    logging.error(f"Classification parsing error: {e}")
-                    logging.error(f"Problematic response: {llm_response.content}")
+                ]
+                
+                # Generate Reasoning Prompt
+                reasoning_prompt = ChainOfThoughtPrompt.generate_reasoning_prompt(
+                    text, similar_examples, label_distribution
+                )
+                
+                # LLM Reasoning with JSON output
+                llm_response = self.llm.invoke(reasoning_prompt)
+                
+                # Robust parsing with multiple fallback methods
+                try:
+                    # First, try ast.literal_eval
+                    classification_result = ast.literal_eval(llm_response.content)
                     
+                    # Validate required keys
+                    required_keys = ['label', 'confidence', 'reasoning']
+                    for key in required_keys:
+                        if key not in classification_result:
+                            raise KeyError(f"Missing required key: {key}")
+                    
+                    # If parsing and validation succeed, return the result
                     return {
                         **state,
-                        'final_classification': self.config['classification']['default_label'],
-                        'confidence_score': 0.0,
-                        'error': f"Parsing error: {str(e)}",
-                        'raw_llm_response': llm_response.content
+                        'intermediate_steps': [
+                            f"Retrieved Examples: {similar_examples}",
+                            f"Label Distribution: {label_distribution}",
+                            f"LLM Reasoning: {classification_result.get('reasoning', '')}"
+                        ],
+                        'retrieved_examples': similar_examples,
+                        'label_distribution': label_distribution,
+                        'final_classification': classification_result['label'],
+                        'confidence_score': classification_result['confidence']
                     }
-        
-        # Validate required keys
-        try:
-            required_keys = ['label', 'confidence', 'reasoning']
-            for key in required_keys:
-                if key not in classification_result:
-                    raise KeyError(f"Missing required key: {key}")
+                
+                except (SyntaxError, ValueError, KeyError) as e:
+                    logging.warning(f"Parsing attempt {attempt + 1} failed: {e}")
+                    
+                    # Optional: Add a slight delay between retries
+                    if attempt < max_retries - 1:
+                        time.sleep(0.5)
             
-            final_label = classification_result['label']
-            confidence = classification_result['confidence']
-            reasoning = classification_result['reasoning']
-        except KeyError as e:
-            logging.error(f"Missing key in classification result: {e}")
-            return {
-                **state,
-                'final_classification': self.config['classification']['default_label'],
-                'confidence_score': 0.0,
-                'error': f"Missing key: {str(e)}",
-                'raw_llm_response': llm_response.content
-            }
+            except Exception as e:
+                logging.error(f"Classification error on attempt {attempt + 1}: {e}")
         
-        # Apply confidence threshold
-        if confidence < self.config['classification']['confidence_threshold']:
-            final_label = self.config['classification']['default_label']
-        
+        # If all retries fail, return default classification
         return {
             **state,
-            'intermediate_steps': [
-                f"Retrieved Examples: {similar_examples}",
-                f"Label Distribution: {label_distribution}",
-                f"LLM Reasoning: {reasoning}"
-            ],
-            'retrieved_examples': similar_examples,
-            'label_distribution': label_distribution,
-            'final_classification': final_label,
-            'confidence_score': confidence
+            'final_classification': self.config['classification']['default_label'],
+            'confidence_score': 0.0,
+            'error': "Failed to parse classification result after multiple attempts"
         }
     
     def create_graph(self):

@@ -14,7 +14,7 @@ system:
   llm_model: 'gpt-4o-mini'
   llm_base_url: 'https://api.openai.com/v1'
   llm_temperature: 0.2
-  llm_max_tokens: 512
+  llm_max_tokens: 1024
   
   # Retrieval settings
   max_similar_examples: 5
