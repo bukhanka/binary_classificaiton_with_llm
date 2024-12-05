@@ -21,9 +21,12 @@ system:
   similarity_threshold: 0.6
 
 datasets:
-  # Paths to original datasets
-  relevant_paths: []
-  irrelevant_paths: []
+  # Paths to original datasets for multi-class classification
+  dataset_paths:
+    - '/home/dukhanin/soc_hack/data_2/Хакатон_2024_очный_этап/Учебная и внеучебная вовлеченность.csv'
+    - '/home/dukhanin/soc_hack/data_2/Хакатон_2024_очный_этап/Социально-бытовые условия.csv'
+    - '/home/dukhanin/soc_hack/data_2/Хакатон_2024_очный_этап/Финансовые условия.csv'
+    - '/home/dukhanin/soc_hack/data_2/Хакатон_2024_очный_этап/Лояльность к вузу.csv'
   
   # Path for unified validation dataset
   validation_dataset: 'validation_dataset.csv'
@@ -36,11 +39,19 @@ classification:
   # Fallback label if confidence is low
   default_label: 0
   
+  # Multi-class classification settings
+  classes:
+    0: 'Учебная и внеучебная вовлеченность'
+    1: 'Социально-бытовые условия'
+    2: 'Финансовые условия'
+    3: 'Лояльность к ВУЗу'
+  
   # Machine learning classifier settings
   classifier:
     type: 'logistic_regression'
     random_state: 42
     max_iter: 1000
+    multi_class: 'multinomial'  # Supports multi-class classification
 
 performance_monitoring:
   # Performance tracking settings
@@ -54,3 +65,6 @@ performance_monitoring:
 
 llm:
   provider: 'openai'
+  # Additional LLM-specific multi-class configuration
+  classification_strategy: 'chain_of_thought'
+  reasoning_depth: 3

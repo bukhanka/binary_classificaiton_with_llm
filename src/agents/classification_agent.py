@@ -4,6 +4,8 @@ from typing import TypedDict, List, Optional, Dict, Any
 import pandas as pd
 import yaml
 import os
+import logging
+import ast
 
 from src.utils.vector_store import VectorStoreRetriever
 
@@ -23,7 +25,7 @@ class ChainOfThoughtPrompt:
         label_distribution: Dict[int, float]
     ) -> str:
         """
-        Generate a comprehensive reasoning prompt for GPT-4o
+        Generate a comprehensive reasoning prompt for GPT-4o with specific class descriptions
         
         Args:
             text (str): Input text to classify
@@ -33,6 +35,87 @@ class ChainOfThoughtPrompt:
         Returns:
             Detailed reasoning prompt
         """
+        # Detailed class descriptions and examples
+        class_descriptions = {
+            0: {
+                "name": "Учебная и внеучебная вовлеченность",
+                "description": """Отношение к преподавателям и качеству преподавания в университете, включая:
+                1. Конкретные отзывы о качестве преподавания и преподавателях
+                2. Системные проблемы образовательного процесса (сессия, задания, экзамены)
+                3. Технические аспекты обучения (документооборот, личные кабинеты)
+                4. Внеучебная деятельность (профкомы, кружки, волонтерство)
+                5. Студенческие мероприятия и активности""",
+                "positive_examples": [
+                    "Хочу сказать большое спасибо кафедре взрослых инфекционных болезней! Дорогие преподаватели, Вы хорошо обучаете во время всего цикла, отличные презентации!",
+                    "У Натальи Михайловны очень интересные лекции, с живой подачей материала...приходите",
+                    "«языковой империализм» английского языка поставил на мне своё клеймо, а всё потому, что у меня не было права отказаться от этого предмета"
+                ],
+                "negative_examples": [
+                    "Владислав Иванов лучший преподаватель! Группа 5116 так считает! Ps: Петров Никита",
+                    "⚡Иванова Даша⚡ САМЫЙ ЛУЧШИЙ ПРОФОРГ НА СВЕТЕ",
+                    "Кто-нибудь сдавал экзамен по бухгалтерскому учету у Романенко О.Е.? Сложно?"
+                ]
+            },
+            1: {
+                "name": "Социально-бытовые условия",
+                "description": """Условия проживания и быта студентов, включая:
+                1. Проблемы общежития (ремонт, оборудование, условия)
+                2. Доступность и качество кампуса
+                3. Организация питания
+                4. Медицинское обслуживание
+                5. Инфраструктура университета""",
+                "positive_examples": [
+                    "С 1 сентября! Когда включат отопление в общаге? Мы умираем от холода 🥶",
+                    "В общежитии опять проблемы с горячей водой, когда это закончится?",
+                    "Почему в столовой такие большие очереди? Невозможно успеть поесть между парами"
+                ],
+                "negative_examples": [
+                    "Кто хочет пойти на концерт Schokk'a 17 февраля?",
+                    "Принимает ли Семенов А.М. автоматы от других преподавателей?",
+                    "В класс Марии Владимировны требуется концертмейстер"
+                ]
+            },
+            2: {
+                "name": "Финансовые условия",
+                "description": """Финансовые аспекты обучения и студенческой жизни:
+                1. Стипендии и социальные выплаты
+                2. Материальная помощь
+                3. Оплата общежития
+                4. Стоимость обучения
+                5. Возможности подработки""",
+                "positive_examples": [
+                    "Почему сиротам пришла только часть стипендии, а именно только социальная. На сайте другая сумма.",
+                    "Когда будет выплата материальной помощи? Уже третий месяц жду",
+                    "Подскажите, как можно получить социальную стипендию?"
+                ],
+                "negative_examples": [
+                    "Кто хочет пойти на концерт в субботу?",
+                    "Где можно найти расписание на следующую неделю?",
+                    "Кто знает телефон деканата?"
+                ]
+            },
+            3: {
+                "name": "Лояльность к ВУЗу",
+                "description": """Общее отношение к университету и его репутации:
+                1. Эмоциональная привязанность к вузу
+                2. Оценка общего уровня университета
+                3. Отношение к руководству вуза
+                4. Гордость за достижения университета
+                5. Критика общего состояния вуза
+                6. Сравнение с другими вузами""",
+                "positive_examples": [
+                    "Горжусь родным вузом! 🫶",
+                    "У меня слёзы, мурашки и гордость за самый лучший ВУЗ❤ Спасибо, Императорский!",
+                    "Как приятно, что наша академия расширяет границы своего влияния"
+                ],
+                "negative_examples": [
+                    "отчисляйся, универ - днище полное, только выйграешь",
+                    "Ничего не работает и не решается. Этот вуз уже не спасти.",
+                    "пол студентов в эту шарагу поступают и не знают для чего."
+                ]
+            }
+        }
+
         # Prepare similar examples text
         examples_text = "\n".join([
             f"Example (Label: {ex['label']}, Similarity: {ex.get('distance', 'N/A')}):\n{ex['text']}"
@@ -45,8 +128,20 @@ class ChainOfThoughtPrompt:
             for label, prob in label_distribution.items()
         ])
         
+        # Prepare class descriptions text
+        class_desc_text = "\n\n".join([
+            f"CLASS {label}: {desc['name']}\n"
+            f"Description: {desc['description']}\n"
+            f"Positive Examples: {desc['positive_examples']}\n"
+            f"Negative Examples: {desc['negative_examples']}"
+            for label, desc in class_descriptions.items()
+        ])
+
         return f"""You are an expert text classifier specialized in student communication analysis. 
 Your task is to perform a nuanced, multi-dimensional classification of student social media posts.
+
+CLASSIFICATION CLASSES:
+{class_desc_text}
 
 CLASSIFICATION GUIDELINES:
 1. Relevance Criteria:
@@ -63,11 +158,6 @@ CLASSIFICATION GUIDELINES:
      d) Spam or unrelated content
      e) Purely social interactions without educational context
 
-2. Contextual Analysis Framework:
-   - Semantic Depth: Analyze beyond surface-level text
-   - Thematic Resonance: Identify underlying educational themes
-   - Contextual Nuance: Consider implicit and explicit meanings
-
 INPUT TEXT:
 {text}
 
@@ -79,29 +169,13 @@ CONTEXTUAL EVIDENCE:
 {label_dist_text}
 
 REASONING PROTOCOL:
-1. Semantic Decomposition
-   - Break down text into core semantic units
-   - Identify potential educational relevance markers
-   - Assess communicative intent
-
-2. Comparative Analysis
-   - Compare with retrieved similar examples
-   - Evaluate thematic alignment
-   - Detect subtle contextual indicators
-
-3. Multi-Dimensional Scoring
-   - Educational Relevance Score (0-1)
-   - Thematic Coherence Assessment
-   - Contextual Significance Evaluation
-
-4. Confidence Calibration
-   - Synthesize multi-level insights
-   - Provide transparent reasoning
-   - Quantify classification confidence
+1. Carefully analyze the input text against the class descriptions
+2. Identify the most appropriate class based on thematic alignment
+3. Provide a clear justification for your classification
 
 RESPONSE FORMAT (Strict JSON):
 {{
-    "label": 0 or 1,  // 1: Relevant, 0: Irrelevant
+    "label": 0 or 1 or 2 or 3,  // Corresponding class label
     "confidence": 0.00-1.00,  // Confidence score
     "reasoning": "Comprehensive explanation of classification decision",
     "key_factors": [
@@ -146,7 +220,8 @@ class ClassificationAgent:
         self.llm = ChatOpenAI(
             model='gpt-4o-mini',  # Specify GPT-4o-mini
             temperature=self.config['system']['llm_temperature'],
-            max_tokens=512
+            max_tokens=512,
+            api_key=os.getenv('OPENAI_API_KEY')  # Ensure API key is set
         )
         
         self.feature_extractor = feature_extractor
@@ -227,17 +302,55 @@ class ClassificationAgent:
         # LLM Reasoning with JSON output
         llm_response = self.llm.invoke(reasoning_prompt)
         
-        # Parse JSON response
+        # Robust parsing with multiple fallback methods
         try:
-            classification_result = eval(llm_response.content)
+            # First, try ast.literal_eval
+            classification_result = ast.literal_eval(llm_response.content)
+        except (SyntaxError, ValueError):
+            try:
+                # If that fails, try json.loads
+                import json
+                classification_result = json.loads(llm_response.content)
+            except json.JSONDecodeError:
+                # If both fail, try to clean and repair the JSON
+                try:
+                    # Remove duplicate or incomplete lines
+                    cleaned_content = '\n'.join(
+                        line for line in llm_response.content.split('\n') 
+                        if line.strip() and not line.startswith('"reasoning":')
+                    )
+                    classification_result = ast.literal_eval(cleaned_content)
+                except Exception as e:
+                    logging.error(f"Classification parsing error: {e}")
+                    logging.error(f"Problematic response: {llm_response.content}")
+                    
+                    return {
+                        **state,
+                        'final_classification': self.config['classification']['default_label'],
+                        'confidence_score': 0.0,
+                        'error': f"Parsing error: {str(e)}",
+                        'raw_llm_response': llm_response.content
+                    }
+        
+        # Validate required keys
+        try:
+            required_keys = ['label', 'confidence', 'reasoning']
+            for key in required_keys:
+                if key not in classification_result:
+                    raise KeyError(f"Missing required key: {key}")
+            
             final_label = classification_result['label']
             confidence = classification_result['confidence']
             reasoning = classification_result['reasoning']
-        except Exception as e:
-            # Fallback to default classification
-            final_label = self.config['classification']['default_label']
-            confidence = 0.5
-            reasoning = "Error in parsing LLM response"
+        except KeyError as e:
+            logging.error(f"Missing key in classification result: {e}")
+            return {
+                **state,
+                'final_classification': self.config['classification']['default_label'],
+                'confidence_score': 0.0,
+                'error': f"Missing key: {str(e)}",
+                'raw_llm_response': llm_response.content
+            }
         
         # Apply confidence threshold
         if confidence < self.config['classification']['confidence_threshold']:
